@@ -1,0 +1,10 @@
+<div class="dashboard-container">
+  <h1>Comments</h1>
+  <ng-container *ngIf="!cards">
+    <div class="info-text">Cards will appear here.</div> 
+  </ng-container>
+  
+  <ng-container *ngFor="let card of cards">
+    <app-my-card [item]="card"></app-my-card>
+  </ng-container>
+</div>
